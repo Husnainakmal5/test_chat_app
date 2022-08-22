@@ -1,0 +1,11 @@
+<div id="<%= dom_id room %>">
+  <p>
+    <strong>Name:</strong>
+    <%= room.name %> |
+    <%= link_to "Show", room %> |
+    <%= link_to "Edit", edit_room_path(room) %> |
+    <%= link_to "Back", rooms_path, 'data-turbo-frame': '_top' %>
+    <%#= link_to "Destroy", room, method: :delete %>
+  </p>
+
+</div>
